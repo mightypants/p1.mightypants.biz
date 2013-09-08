@@ -3,38 +3,69 @@
 <head>
 <style type="text/css">
 
+/* 193441 3e606f 91aa9d  d1d88d fcfff5*/
+
 * {
 margin: 0;
 padding: 0;
 border: 0;
 }
 
+.clearfloat {
+	clear: both;
+}
+
 body {
-background-color: #33552d;
+background-color: #193441;
 font-family: arial;
-color: #666;
+color: #193441;
 }
 
 #container {
-width: 800px;
+width: 900px;
 height: 1200px;
 margin: 0 auto;
-background-color: #f5f5d9;
+border: 8px solid #91aa9d;
+background-color: #fcfff5;
 }
 
-h1 {
-border-bottom: 2px dashed #666;
+#profilePic {
+display: block;
+margin: 20px;
+float: left;
 }
+
+#innerRight{
+margin: 20px;
+width: 500px;
+float: left;
+}
+
+#name {
+border-bottom: 3px dotted #d1d88d;
+color: #d1d88d;
+}
+
+.bio {
+margin: 10px 0;
+}
+
+
 
 </style>
 </head>
 <body>
 
 <div id="container">
-	<h1>Jonnie Dredge</h1>
-
-	<p class="bio"></p>
-	<p class="editor">Sublime Text (and others)</p>
+	<img id="profilePic" src="images/me.jpg" />
+	
+	<div id="innerRight">
+		<h1 id="name">Jonnie Dredge</h1>
+		<p class="bio">I've been a music guy most of my life--started with a basic music class at age 4 and continued on to study cello, guitar, percussion, piano, and voice through high school.  I got my bachelor's degree in jazz studies and my master's in music composition and audio production.  I've written, recorded, and produced music for short films, TV, and interactive media.  It's been pretty cool.</p>
+		<p class="bio">Somewhere along the way I decided I needed a website, and I decided to make it myself.  That was pretty neat, and a few months later I had a web design job (surprise!).</p>
+		<p class="editor">Sublime Text (and others)</p>
+		<br class="clearfloat" />
+	</div>
 </div>
 
 </body>
