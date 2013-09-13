@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>I'm a guy.</title>
 <style type="text/css">
 
 /* 193441 3e606f 91aa9d  d1d88d fcfff5*/
@@ -11,21 +12,36 @@ padding: 0;
 border: 0;
 }
 
+a:link, a:visited {
+color: #d1d88d;	
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover, a:active {
+color: #91aa9d;	
+text-decoration: none;
+font-weight: bold;
+}
+
+h1 {font-size: 2.7em; border-bottom: 3px dotted #d1d88d; color: #3e606f; text-align: center}
+h2 {font-size: 1.1em; color: #d1d88d;}
+
 .clearfloat {
 	clear: both;
 }
 
 body {
 background-color: #193441;
-font-family: arial;
+font-family: arial, sans-serif;
 color: #193441;
 }
 
 #container {
 width: 900px;
-height: 1200px;
-margin: 0 auto;
+margin: 20px auto;
 border: 8px solid #91aa9d;
+
 background-color: #fcfff5;
 }
 
@@ -41,31 +57,39 @@ width: 500px;
 float: left;
 }
 
-#name {
-border-bottom: 3px dotted #d1d88d;
-color: #d1d88d;
+.subhead {
+font-size: .5em;
 }
 
 .bio {
-margin: 10px 0;
+margin: 12px 0;
+font: .99em arial, sans-serif;
 }
 
-
+.needlesslyLargeText {
+font-weight: bold;
+font-size: 1.8em;
+color: #3e606f;
+}
 
 </style>
 </head>
 <body>
 
 <div id="container">
-	<img id="profilePic" src="images/me.jpg" />
+	<img id="profilePic" src="images/me.jpg" alt="me" />
 	
 	<div id="innerRight">
-		<h1 id="name">Jonnie Dredge</h1>
+		<h1>Jonnie Dredge</h1>
+		
 		<p class="bio">I've been a music guy most of my life--started with a basic music class at age 4 and continued on to study cello, guitar, percussion, piano, and voice through high school.  I got my bachelor's degree in jazz studies and my master's in music composition and audio production.  I've written, recorded, and produced music for short films, TV, and interactive media.  It's been pretty cool.</p>
-		<p class="bio">Somewhere along the way I decided I needed a website, and I decided to make it myself.  That was pretty neat, and a few months later I had a web design job (surprise!).</p>
-		<p class="editor">Sublime Text (and others)</p>
+		<p class="bio">Somewhere along the way I decided I needed a website, and I decided to make it myself (<a href="http://www.jonniedredge.com" target="_blank">check it out</a>, if you wish).  That was pretty neat, and a few months later I had a web design job (surprise!).</p>
+		<p class="needlesslyLargeText">. . . more things happened . . .</p>
+		<p class="bio">Now I have a semi-but-not-quite web developer position at sizeable internet company and in order to get on the career path I want I'm going to need some formal education in computer science.  So here I am.  Learning stuff and what have you. I still make music. 
+		<p class="bio">I use a few different code editors and IDEs regularly, including Sublime, Eclipse, Xcode, and sometimes good old fashioned VIM.</p>
 		<br class="clearfloat" />
 	</div>
+<br class="clearfloat" />	
 </div>
 
 </body>
